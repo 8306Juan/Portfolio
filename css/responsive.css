@@ -1,0 +1,129 @@
+@media screen and (max-width: 1030px){
+
+	.btnRes{
+		display: initial;
+		width: 64px;
+		position: fixed;
+		top: 10px;
+		left: 10px;
+		z-index: 2;
+	}
+	.nav{
+		display: none;
+		text-align: center;
+		width: 100vw !important;
+		height: 100vh !important;		
+		min-width: none;
+		max-width: none;
+		top: 0%;
+		transform: translateY(0%);
+		position: initial;
+		z-index: 1;
+	}
+	.nav ul{
+		padding: 0;
+		width: 100vw;
+	}
+	#liA{
+		margin-top: 20vh;
+	}
+	.nav li a, .nav li p{
+		padding-left: 0px;
+		margin-bottom: 6vh;
+		font-size: 3.8em;
+	}
+	.nav-on{
+		font-size: 3.8em;
+		color: #000;
+		text-shadow: none;
+	}
+	.base{
+		text-align: center;
+		font-family: cursive;
+		font-size: 1.3em;
+		position: initial!important;
+		width: 100vw;
+		color: #000;
+	}
+	#foto{
+		width: 10em;
+		margin-top: 50px;
+		border: dashed 3px #000;
+		border-radius: 50%;
+		left: 0%;
+		transform: translate(0%, 0%);
+	}
+	.datosTexto{
+		padding: 10px;
+		text-align: center;
+		transform: translateY(25%);
+		box-shadow: 0px 0px 18px 0px #000;
+		border-radius: 0px;
+	}
+
+
+	/*	HABILIDADES		HABILIDADES		HABILIDADES		HABILIDADES 	*/
+
+
+	
+	.habilidad img{
+		width: 90%;
+	}
+
+
+
+	/*	CONTACTO	CONTACTO	CONTACTO	CONTACTO	CONTACTO	CONTACTO	*/
+
+
+
+	.formContacto{
+		display: none;
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(70,70,70,.9);
+		z-index: 2;
+	}
+	.formulario{
+		position: relative;
+		top: 45vh;
+		text-align: center;
+		transform: translate(5%, -57%);
+		background-color: #fff;
+		width: 90vw;
+	}
+	#nombreI,#emailI,#textI{
+		border: double 2px #000;
+		width: 70%;
+		height: 6vh;
+		font-size: 1.3em;
+	}
+	.formulario p,.formulario button{
+		font-family: Dexaters;
+		font-size: 2.4em
+	}
+	#closeContact{
+		position: relative;
+		width: 64px;
+		top: 5vh;
+		left: 75vw;
+		cursor: pointer;
+		z-index: 1;
+	}
+
+
+
+	/*
+		FOOTER 		FOOTER		FOOTER		FOOTER		FOOTER		FOOTER
+	*/
+
+	.footer{
+		text-align: center;
+		background-color: #bbb;
+		display: initial;
+	}
+	.footer>div:last-child, .footer>div:first-child{
+		margin-top: 50px;
+	}
+
+}

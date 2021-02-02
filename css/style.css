@@ -1,76 +1,183 @@
+@font-face {
+   font-family: 'Cream';
+   src: url('CreamCake.ttf');
+}
+@font-face {
+	font-family: 'Dexaters';
+	src: url('Dexaters Sillent.otf');
+}
+*{
+	margin: 0;}
+html {
+	scroll-behavior: smooth;
+}
 body{
-	font-family: papyrus, garamond, optima;
-	font-weight: bold;
-	background-color: #454441;
+	/*background-color: #559*/
+	background-color: #FFF;
+}
+.btnRes{
+	display: none;
+}
+.h1{
+	font-family: Cream;
+	font-size: 3.5em;
+	text-shadow: 8px 8px #3cf;
+}
+.subTitle{
+	font-family: Dexaters;
+	font-size: 3em;
+}
+.nav{
+	display: initial;
+	font-family: Cream;
+	min-width: 30%;
+	max-width: 36%;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+li{
+	list-style: none;
+}
+.nav li a, .nav li p{
+	display: inline-block;
+	padding-left: 10px;
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 6em;
+	transition: .5s;
+}
+.nav-on{
+	font-size: 9.5em !important;
+	color: #3cf !important;
+	text-shadow: 5px 5px black;
+}
+.supBase{
+	background-color: #fff;
 }
 .base{
-	margin: auto;
-	width: 90%;
+	font-family: cursive;
+	font-size: 32px;
+	position: relative;
+	left: calc(30% - 10px);
+	width: 70%;
+	color: #000;
+}
+.sup-Cont{
 	text-align: center;
+	min-height: 100vh;
 }
-#inicio{
-	overflow: hidden;
-	border-radius: 50px;
-	margin: auto;
+#foto{
+	width: 10em;
+	margin-top: 50px;
+	border: dashed 3px #000;
+	border-radius: 50%;
+}
+.datosTexto{
 	text-align: center;
-	background-color: white;
-}
-#foto img{
-	width: 250px;
-	height: 250px;
-	box-shadow: 0px 0px 15px 0px ;
-	border-radius: 125px;
-	margin-bottom: 20px;
-}
-.contacto{
-	margin: auto;
-	display: flex;
-	justify-content: space-around;
-	height: 84px;
-	width: 80%;
-	margin-bottom: 10px;
-}
-.contacto img{
-	cursor: pointer;
-	width: 60px;
-	height: 60px;
 	transform: translateY(25%);
+	padding-right: 15px;
+	padding-left: 15px;
+	box-shadow: 0px 0px 18px 0px #000;
+	border-radius: 30px;
 }
 
-.sobreMi{
+/*	HABILIDADES		HABILIDADES		HABILIDADES		HABILIDADES 	*/
+
+
+
+.datosHabilidades{
+	display: inline-grid;
+	margin-top: 10px;
+	grid-template-columns: 25% 25% 25% 25%;
+	justify-items: center;
 	text-align: center;
-	display: inline-block;
-	position: absolute;
-	top: 90%;
-	left: 5%;
-	background-color: white;
-	width: 40%;
-	height: 500px;
-	border-radius: 50px;
-	margin-bottom: 50px;
+	padding-right: 15px;
+	padding-left: 15px;
+	box-shadow: 0px 0px 18px 0px #000;
+	border-radius: 30px;
 }
-.sobreMi h3{
-	font-size: 3vh;
-}
-.sobreMi p{
-	margin: 20px auto;
-	width: 80%;
-	font-size: 1vw;
-	font-family: 
+.habilidad{
+	margin: 8% 0px;
+	text-align: center;
+	font-size: .7em;
+	max-width: 128px;
 }
 
-.skills{
-	text-align: center;
-	display: inline-block;
+
+
+/*	CONTACTO	CONTACTO	CONTACTO	CONTACTO	CONTACTO	CONTACTO	*/
+
+
+
+.formContacto{
+	display: none;
 	position: absolute;
-	top: 90%;
-	left: 55%;
-	background-color: white;
-	width: 40%;
-	height: 500px;
-	border-radius: 50px;
-	margin-bottom: 50px;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(100,100,100,.7);
+	z-index: 2;
 }
-.skills h3{
-	font-size: 3vh;
+.formulario{
+	position: relative;
+	top: 45vh;
+	text-align: center;
+	transform: translate(50%, -50%);
+	background-color: #fff;
+	width: 50vw;
+}
+
+#nombreI,#emailI,#textI{
+	border: double 2px #000;
+	width: 50%;
+	height: 6vh;
+	font-size: 2em;
+}
+.formulario p,.formulario button{
+	font-family: Dexaters;
+	font-size: 3.5em
+}
+#btnSub{
+	outline: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 3vh;
+	border: solid 3px #000;
+	border-radius: .7em;
+}
+#btnSub:hover{
+	color: #3cf;
+	background-color: #000;
+}
+#closeContact{
+	position: relative;
+	top: 10vh;
+	left: 73vw;
+	cursor: pointer;
+	z-index: 1;
+}
+.on{
+	display: initial;
+}
+
+/*
+	FOOTER 		FOOTER		FOOTER		FOOTER		FOOTER		FOOTER
+*/
+
+.footer{
+	background-color: #bbb;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+.footer div{
+	text-align: center;
+}
+.redesS{
+	margin: 15px;
+	display: inline-block;
+}
+.redesS img{
+	width: 64px;
 }
