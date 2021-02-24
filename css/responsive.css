@@ -1,5 +1,9 @@
 @media screen and (max-width: 1030px){
 
+	body{
+		overflow-x: hidden;
+	}
+
 	.btnRes{
 		display: initial;
 		width: 64px;
@@ -37,6 +41,10 @@
 		color: #000;
 		text-shadow: none;
 	}
+	.supBase{
+		display: block;
+		width: 90vw;
+	}
 	.base{
 		text-align: center;
 		font-family: cursive;
@@ -45,6 +53,11 @@
 		width: 100vw;
 		color: #000;
 	}
+
+
+	/* PRESENTACION		PRESENTACION 	PRESENTACION 	PRESENTACION*/
+
+
 	#foto{
 		width: 10em;
 		margin-top: 50px;
@@ -54,6 +67,7 @@
 		transform: translate(0%, 0%);
 	}
 	.datosTexto{
+		width: 98%;
 		padding: 10px;
 		text-align: center;
 		transform: translateY(25%);
@@ -64,7 +78,14 @@
 
 	/*	HABILIDADES		HABILIDADES		HABILIDADES		HABILIDADES 	*/
 
-
+	.datosHabilidades{
+		width: 98%;
+		padding: 10px;
+		text-align: center;
+		transform: translateY(25%);
+		box-shadow: 0px 0px 18px 0px #000;
+		border-radius: 0px;
+	}
 	
 	.habilidad img{
 		width: 90%;
@@ -118,12 +139,20 @@
 	*/
 
 	.footer{
-		text-align: center;
+		margin-top: 12vh;
 		background-color: #bbb;
-		display: initial;
+		display: grid;
+		grid-template-columns: auto auto auto;
 	}
-	.footer>div:last-child, .footer>div:first-child{
-		margin-top: 50px;
+	.footer div{
+		text-align: center;
+	}
+	.redesS{
+		margin: 15px;
+		display: inline-block;
+	}
+	.redesS img{
+		width: 64px;
 	}
 
 }
