@@ -78,6 +78,7 @@ li{
 	margin-top: 50px;
 	border: dashed 3px #000;
 	border-radius: 50%;
+	z-index: 1;
 }
 .datosTexto{
 	margin: auto;
@@ -90,8 +91,83 @@ li{
 	max-width: 977px;
 }
 
-/*	HABILIDADES		HABILIDADES		HABILIDADES		HABILIDADES 	*/
+/* COSAS QUE AMO 	 COSAS QUE AMO 		 COSAS QUE AMO 		 COSAS QUE AMO */
 
+.cqa {
+    background-color: rgba(200,200,200,.3);
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.cqa1off, .cqa2off, .cqa3off,.cqa1on, .cqa2on, .cqa3on{
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.cqa1off{
+	transition: .7s;
+	transition-delay: .25s;
+	opacity: 0;
+	position: absolute;
+    width: 1px;
+    height: 170px;
+    top: 39.5%;
+    left: 37.5%;
+}
+.cqa2off{
+	transition: .7s;
+	transition-delay: .15s;
+	opacity: 0;
+	position: absolute;
+    width: 170px;
+    height: 1px;
+    top: 30%;
+    left: 41%;
+    justify-content: space-between;
+}
+.cqa3off{
+	transition: .7s;
+	opacity: 0;
+	position: absolute;
+    width: 1px;
+    height: 170px;
+    top: 39.5%;
+    left: 57%;
+}
+
+.cqa1on{
+	transition: .7s;
+	position: absolute;
+    width: 1px;
+    height: 350px;
+    top: 33.5%;
+    left: 26.5%;
+}
+.cqa2on{
+	transition: .7s;
+	transition-delay: .15s;
+	position: absolute;
+    width: 237px;
+    height: 1px;
+    top: 17%;
+    left: 38.3%;
+    justify-content: space-between;
+}
+.cqa3on{
+	transition: .7s;
+	transition-delay: .25s;
+	position: absolute;
+    width: 1px;
+    height: 350px;
+    top: 33.5%;
+    left: 65%;
+}
+
+
+/*	HABILIDADES		HABILIDADES		HABILIDADES		HABILIDADES 	*/
 
 
 .datosHabilidades{
@@ -118,9 +194,7 @@ li{
 }
 
 
-
 /*	CONTACTO	CONTACTO	CONTACTO	CONTACTO	CONTACTO	CONTACTO	*/
-
 
 
 .formContacto{
@@ -192,4 +266,25 @@ li{
 }
 .redesS img{
 	width: 32px !important;
+}
+
+
+/*
+	EASTER EGG		EASTER EGG		EASTER EGG		EASTER EGG		EASTER EGG
+
+	EASTER EGG		EASTER EGG		EASTER EGG		EASTER EGG		EASTER EGG
+*/
+
+.easterEggs{
+    display: inline-flex;
+    position: fixed;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(51, 204, 255, .5);
+    left: 50px;
+    top: 50px;
+}
+.easterEggs img{
+	max-width: 80px;
+	border-radius: 50%;
 }
